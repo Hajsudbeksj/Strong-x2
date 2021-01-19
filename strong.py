@@ -6,21 +6,19 @@ print("""───▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄───
 ─▄▄──█░░░▀█▀░░░█──▄▄─
 █░░█─▀▄░░░░░░░▄▀─█░░█
 """)
-yes=("y")
-no=("n")
 name=input("Do you want to continue? [y/n]")
-if name == no :
+if name == "n" or name == "no" :
 	os.system("exit")
-elif name == yes :
+elif name == "y" or name == "yes":
 	print ("ok")
 	os.system ("pkg install git")
-	os.system ("pkg install python3")
+	os.system ("pkg install cmatrix")
 	os.system ("pkg install update")
 	os.system ("pkg install upgrade")
 	os.system ("pkg install python2")
 	os.system ("pkg install ruby")
 	os.system ("pkg install php")
-	os.system ("pkg install java")
+	os.system ("pkg install ping")
 	os.system ("pkg install bash")
 	os.system ("pkg install perl")
 	os.system ("pkg install nmap")
@@ -40,4 +38,6 @@ elif name == yes :
 	os.system ("pkg install wcalc")
 	os.system ("pkg install openssl")
 	os.system ("pkg install bmon")
+else:
+	os._exit(1)
 print("good bay :)")
